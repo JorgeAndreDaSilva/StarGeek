@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+@media (max-width:800px) 
+{
+
+}
 
 
 .t1{
@@ -61,11 +65,11 @@
   }
   
   .botao1 {
-
+ margin: 20px;
     background-color: #808080;
     color: #fff;
     border: 0;
-    border-radius: 24px;
+    border-radius: 15px;
     padding: 10px 16px;
     font-size: 1rem;
     font-weight: 600;
@@ -94,7 +98,7 @@
    
 }
 .tx{
-   background-color: #000000;
+   background-color: #454343;
 }
 .cabe > img{
     height: 200px;
@@ -110,17 +114,16 @@
 }
 .p1{
    flex-direction: column;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
+  
+   margin-left: 20px;
     color: white;
 }
 .pa{
     color: white;
 }
-main{
+.pa{
     margin: 0 auto;
-    max-width: 1200px;
+   
     display: flex;
 }
 .corpo1{
@@ -129,13 +132,15 @@ main{
 }
 .corpo1 > img{
     width: 50%;
-    margin-left: 600px;
+    margin-right: 300px;
+    height: 350px;
+    width: 400px;
 }
 .corpo1 > .tex{
      width:50%;
      display:flex ;
-     justify-content: center;
-     align-items: center;
+     margin-left: 20px;
+    margin-top: 50px;
 }
 
 .fim > h1 {
@@ -146,8 +151,6 @@ main{
 }
 .fim > div{
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 .fim > div > a{
@@ -157,4 +160,141 @@ margin-bottom: 15px;
 .sair{
     text-decoration: none;
     color: white;
+}
+.ha4 > img{
+    width: 300px;
+}
+.rs{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-image: url(..//img/imagem-destacada.jpg);
+}
+.cabe1{
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+    background-repeat: no-repeat;
+   background-size: cover;
+    background-image: url(..//img/gifs-de-jogos-1.gif);
+   
+}
+.cabe1 > img{
+    width: 300px;
+}
+.w1{
+    text-align: center;
+    font-size: 50px;
+    margin: 20px;
+}
+.button {
+    padding: 1.3em 3em;
+    color: #000;
+    width: 188px;
+    height: 60px;
+    background-color: #fff;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    margin: 5px;
+  }
+  
+  .button:hover {
+    background-color: #36c046;
+    box-shadow: 0px 15px 20px rgba(37, 181, 123, 0.4);
+    color: #fff;
+  }
+
+  .bota{
+    align-items: center;
+    text-align: center;
+   justify-content: center;
+   flex-direction: column;
+   display: flex;
+}
+.cabe1 > a{
+    color: white;
+    text-decoration: none;
+}
+.filmes > div > h1{
+    color: white;
+}
+
+.filmes > img {
+    width: 200px;
+    height: 200px;
+}
+.filmes{
+    display: flex;
+
+}
+.filmes{
+    overflow: scroll;
+    gap: 10px;
+
+    
+}
+
+.filmes::-webkit-scrollbar
+{
+    display: none;
+}
+.j{
+    color: white;
+}
+.r9:hover{
+content: url(../img/champions-world-cup-champions.gif);
+}
+.panda:hover{
+    content: url(../img/200w.gif);
+}
+.sad:hover{
+    content: url(../img/ParallelPoshDogwoodtwigborer-size_restricted.gif);
+}
+.panda1:hover{
+    content: url(../img/4u38.gif);
+}
+.loki:hover{
+    content: url(../img/loki-laufeyson.gif);
+}
+.mario:hover{
+    content: url(../img/filme+mario+cogumelooo+gif-ms-swyijtqbcp.gif);
+}
+.estranho:hover{
+    content: url(../img/gifs-de-stranger-things-0.gif);
+}
+.one:hover{
+    content: url(../img/one.gif);
+}
+.naru:hover{
+    content: url(../img/PlainFriendlyFowl-size_restricted.gif);
+}
+.gus:hover{
+    content: url(../img/guts-berserk-guts.gif);
+}
+.ippo:hover{
+    content: url(../img/hajime-no-ippo-ippo.gif);
+}
+.goku:hover{
+    content: url(../img/giphy.gif);
+}
+.vi:hover{
+    content: url(../img/vinland-saga.gif);
+}
+.adam:hover{
+    content: url(../img/Black\ Adam5.gif);
+}
+.fo:hover{
+    content: url(../img/quantumania-ant-man.gif);
+}
+.the:hover{
+    content: url(../img/giphy\ \(1\).gif);
+}
+.dark:hover{
+    content: url(../img/my-hero-academia-deku.gif);
+}
+.demon:hover{
+    content: url(../img/demon-slayer.gif);
 }
