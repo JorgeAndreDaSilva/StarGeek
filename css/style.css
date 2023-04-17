@@ -14,6 +14,7 @@
     background-image: url(..//img/avengers-gif.gif);
    background-repeat: no-repeat;
    background-size: cover;
+   height: 100vh;
 }
 .corpo {
      margin: 0 auto;
@@ -81,13 +82,15 @@
     background-color: #747474;
   }
 .e2 > img{
-    height: 90px;
-    width: 90px;
+    margin: 20px;
+    height: 100px;
+    width: 100px;
 }
 .fundo{
     background-image: url(..//img/pacman-gaming.gif);
    background-repeat: no-repeat;
    background-size: cover;
+   height: 100vh;
 }
 .cabe{
     display: flex;
@@ -113,6 +116,7 @@
     margin: 10px;
 }
 .p1{
+    margin-bottom: 25px;
    flex-direction: column;
   
    margin-left: 20px;
@@ -138,9 +142,9 @@
 }
 .corpo1 > .tex{
      width:50%;
+     margin: 25px;
      display:flex ;
-     margin-left: 20px;
-    margin-top: 50px;
+    
 }
 
 .fim > h1 {
@@ -181,8 +185,11 @@ margin-bottom: 15px;
 }
 .cabe1 > img{
     width: 300px;
+    margin: 15px;
 }
 .w1{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
     text-align: center;
     font-size: 50px;
     margin: 20px;
@@ -215,15 +222,20 @@ margin-bottom: 15px;
    display: flex;
 }
 .cabe1 > a{
-    color: white;
-    text-decoration: none;
+    text-decoration: none
+}
+.cabe1 > a > h2{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    
 }
 .filmes > div > h1{
     color: white;
 }
 
 .filmes > img {
-    width: 200px;
+    width: 180px;
     height: 200px;
 }
 .filmes{
@@ -298,3 +310,280 @@ content: url(../img/champions-world-cup-champions.gif);
 .demon:hover{
     content: url(../img/demon-slayer.gif);
 }
+.t4{
+    background-image: url(..//img/leo.gif);
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 100vh;
+}
+.corpo-5{
+    margin: 0 auto;
+   max-width: 300px;
+   overflow: hidden;
+   border-radius: 16px;
+   color: #ffffff;
+ }
+ .rating {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 0.3rem;
+  --stroke: #000000;
+  --fill: #ffc73a;
+}
+
+.rating input {
+  appearance: unset;
+}
+
+.rating label {
+  cursor: pointer;
+}
+
+.rating svg {
+  width: 3rem;
+  height: 3rem;
+  overflow: visible;
+  fill: transparent;
+  stroke: var(--stroke);
+  stroke-linejoin: bevel;
+  stroke-dasharray: 12;
+  animation: idle 4s linear infinite;
+  transition: stroke 0.2s, fill 0.5s;
+}
+
+@keyframes idle {
+  from {
+    stroke-dashoffset: 24;
+  }
+}
+
+.rating label:hover svg {
+  stroke: var(--fill);
+}
+
+.rating input:checked + svg,
+.rating label:has(input:checked) ~ label svg {
+  transition: 0s;
+  animation: idle 4s linear infinite, yippee 0.75s backwards;
+  fill: var(--fill);
+  stroke: var(--fill);
+  stroke-opacity: 0;
+  stroke-dasharray: 0;
+  stroke-linejoin: miter;
+  stroke-width: 8px;
+}
+
+@keyframes yippee {
+  0% {
+    transform: scale(1);
+    fill: var(--fill);
+    fill-opacity: 0;
+    stroke-opacity: 1;
+    stroke: var(--stroke);
+    stroke-dasharray: 10;
+    stroke-width: 1px;
+    stroke-linejoin: bevel;
+  }
+
+  30% {
+    transform: scale(0);
+    fill: var(--fill);
+    fill-opacity: 0;
+    stroke-opacity: 1;
+    stroke: var(--stroke);
+    stroke-dasharray: 10;
+    stroke-width: 1px;
+    stroke-linejoin: bevel;
+  }
+
+  30.1% {
+    stroke: var(--fill);
+    stroke-dasharray: 0;
+    stroke-linejoin: miter;
+    stroke-width: 8px;
+  }
+
+  60% {
+    transform: scale(1.2);
+    fill: var(--fill);
+  }
+}
+
+.filmes > img{
+    border-radius: 10px;
+}
+.vx{
+    background-color: #000000;
+}
+.saiu{
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
+.icon-btn {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #cdcdcd;
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    transition: width 0.2s ease-in-out;
+    font-weight: 500;
+    font-family: inherit;
+  }
+  
+  .add-btn:hover {
+    width: 120px;
+  }
+  
+  .add-btn::before,
+  .add-btn::after {
+    transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 10px;
+    top: calc(50% - 2px);
+    background: seagreen;
+  }
+  
+  .add-btn::after {
+    right: 14px;
+    overflow: hidden;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+  }
+  
+  .add-btn::before {
+    left: 14px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+  }
+  
+  .icon-btn:focus {
+    outline: none;
+  }
+  
+  .btn-txt {
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  
+  .add-btn:hover::before,
+  .add-btn:hover::after {
+    width: 4px;
+    border-radius: 2px;
+  }
+  
+  .add-btn:hover .btn-txt {
+    opacity: 1;
+  }
+  
+  .add-icon::after,
+  .add-icon::before {
+    transition: all 0.2s ease-in-out;
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 2px;
+    top: calc(50% - 10px);
+    background: seagreen;
+    overflow: hidden;
+  }
+  
+  .add-icon::before {
+    left: 22px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+  }
+  
+  .add-icon::after {
+    right: 22px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+  }
+  
+  .add-btn:hover .add-icon::before {
+    left: 15px;
+    height: 4px;
+    top: calc(50% - 2px);
+  }
+  
+  .add-btn:hover .add-icon::after {
+    right: 15px;
+    height: 4px;
+    top: calc(50% - 2px);
+  }
+
+  @media (max-width:500px){
+    .corpo1{
+        flex-direction: column;
+        
+    }
+    .corpo1 > img{
+        width: 100%;
+    }
+    .corpo1 > .tex{
+        width: 100%;
+    }
+    .a2{
+        padding: 0;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    .w1{
+        font-size: 20px;
+    }
+  }
+  .group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 190px;
+   }
+   
+   .input {
+    width: 100%;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+   }
+   
+   .input::placeholder {
+    color: #9e9ea7;
+   }
+   
+   .input:focus, input:hover {
+    outline: none;
+    border-color: rgba(234,76,137,0.4);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+   }
+   
+   .icon {
+    position: absolute;
+    left: 1rem;
+    fill: #9e9ea7;
+    width: 1rem;
+    height: 1rem;
+   }
+.qa{
+    display: flex;
+    justify-content: center;
+}   
+.fim > h1{
+    margin: 20px;
+}
+   
+   
+   
+   
