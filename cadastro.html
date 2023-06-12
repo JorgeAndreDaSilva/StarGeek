@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StarGeek</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/Group 5.png" type="image/x-icon">
+<!-- 
 </head>
 <body class="fundo">
-    <header class="e2"><img src="img/Group 5.png" alt=""></header>
+    
     <div class="corpo">
         <form class="menu">
             <h1 class="Titulo">Cadastrar</h1>
@@ -25,4 +17,64 @@
         <a href="index.html" class="sair"><p>sair</p></a>
         
 </body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarGeek-Cadastro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/Group 5.png" type="image/x-icon">
+    <style>
+        .img {
+            width: 150px;
+        }
+        table{
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body class="fundo">
+    <header class="Log"><img src="img/Group 5.png" alt=""></header>
+
+        <div class="corpo">
+        <table>
+            <tr>
+                <td>Nome:</td>
+                <td><input type="text" id="nome" placeholder="Digite o seu nome "></td>
+            </tr>
+            <tr>
+                <td>Usuário</td>
+                <td><input type="text" id="login" placeholder="Digite o seu login"></td>
+            </tr>
+            <tr>
+                <td>Senha</td>
+                <td><input type="password" id="senha" placeholder="Digite a senha"></td>
+            </tr>
+            <tr>
+                <td>Senha</td>
+                <td><input type="password" id="confirmarSenha" placeholder="Confirme sua senha"></td>
+            </tr>
+        </table>
+        <br>
+   
+        <button onclick="botaoCadastrar()">Cadastrar Usuário</button>
+        <br><br>
+        <a href="index.html" class="sair"><h2>Sair</h2></a>
+    </div>
+    
+
+    <script defer src="cadastro.js"></script>
+    
+</body>
+
+
+
 </html>
