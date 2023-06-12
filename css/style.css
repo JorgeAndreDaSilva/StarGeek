@@ -8,7 +8,8 @@
 @media (max-width:800px) {}
 
 .fundo-pri {
-  background-color: rgb(66, 66, 66);
+  background: rgb(25,26,49);
+  background: linear-gradient(160deg, rgba(25,26,49,1) 0%, rgba(0,22,127,0.9697128851540616) 100%);
 }
 
 .corpo-L {
@@ -106,7 +107,7 @@ input {
   align-items: center;
   flex-direction: column;
   color: white;
-  background-image: url(..//img/imagem-destacada.jpg);
+  background-image: url(..//img/Geek.webp);
 
 }
 
@@ -200,6 +201,7 @@ input {
 .cabe1 {
   flex-direction: column;
   color: rgb(0, 0, 0);
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(..//img/gifs-de-jogos-1.gif);
@@ -211,33 +213,59 @@ input {
   margin: 15px;
 }
 
-.w1 {
-  background-color: rgba(0, 0, 0, 0.6);
+.titu {
+  text-shadow: 0px 0px 5px black;
   color: #ffffff;
   text-align: center;
   font-size: 50px;
   margin: 20px;
 }
-
-.button {
-  padding: 1.3em 3em;
-  color: #000;
-  width: 188px;
-  height: 60px;
-  background-color: #fff;
-  border: none;
-  border-radius: 30px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
+.button-name {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.2) 0 2px 4px,rgba(45, 35, 66, 0.15) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
   text-decoration: none;
-  margin: 5px;
-}
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+ }
+ 
+ .button-name:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+ }
+ 
+ .button-name:hover {
+  box-shadow: rgba(45, 35, 66, 0.3) 0 4px 8px, rgba(45, 35, 66, 0.2) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+ }
+ 
+ .button-name:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+ }
 
-.button:hover {
-  background-color: #36c046;
-  box-shadow: 0px 15px 20px rgba(37, 181, 123, 0.4);
-  color: #fff;
-}
+
 
 .bota {
   align-items: center;
@@ -252,7 +280,7 @@ input {
 }
 
 .cabe1>a>h2 {
-  background-color: rgba(0, 0, 0, 0.6);
+ text-shadow: 3px 2px 2px black;
   color: rgb(255, 255, 255);
   margin: 10px;
 
@@ -465,9 +493,12 @@ input {
 }
 
 .Catalogo {
-  background-color: #000000;
+  background: rgb(25,26,49);
+  background: linear-gradient(160deg, rgba(25,26,49,1) 0%, rgba(0,22,127,0.9697128851540616) 100%);
 }
-
+.cata{
+  color: white;
+}
 .saiu {
   color: white;
   text-decoration: none;
@@ -658,4 +689,49 @@ input:hover {
 .aFilme{
   color: white;
   text-decoration: none;
+}
+
+.btn {
+  width: 140px;
+  height: 50px;
+  background: linear-gradient(to top, #00154c, #12376e, #23487f);
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.btn span {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: top 0.5s;
+}
+
+.btn-text-one {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.btn-text-two {
+  position: absolute;
+  width: 100%;
+  top: 150%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.btn:hover .btn-text-one {
+  top: -100%;
+}
+
+.btn:hover .btn-text-two {
+  top: 50%;
 }
