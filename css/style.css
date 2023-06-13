@@ -205,18 +205,18 @@
   background-image: url(..//img/imagem-destacada.jpg);
 }
 
-.cabe1 {
+.medias {
   flex-direction: column;
   color: rgb(0, 0, 0);
-  height: 100vh;
-  background-repeat: no-repeat;
+}
+.mediaR{
   background-size: cover;
   background-position: center;
   background-image: url(..//img/gifs-de-jogos-1.gif);
-
+  height: 100vh;
+  background-repeat: no-repeat;
 }
-
-.cabe1>img {
+.medias>img {
   width: 300px;
   margin: 15px;
 }
