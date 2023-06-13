@@ -109,7 +109,6 @@
 
 .cabe {
   display: flex;
-
   align-items: center;
   flex-direction: column;
   background-position: center;
@@ -213,7 +212,7 @@
   background-size: cover;
   background-position: center;
   background-image: url(..//img/gifs-de-jogos-1.gif);
-  height: 100vh;
+  height: 111vh;
   background-repeat: no-repeat;
 }
 .medias>img {
