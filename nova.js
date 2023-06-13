@@ -11,7 +11,7 @@ if (filme == null) {
 
 function Exibir() {
     var filmes = document.getElementById("nome").value
-    var resumo = document.getElementById("resumo").value
+  
     var link = document.getElementById("links").value
     document.getElementById("resultado").innerHTML = ''
     var categoria = document.getElementById('categoria')
@@ -20,7 +20,7 @@ function Exibir() {
     var filmeV = {
         Nomes: filmes,
         Links: link,
-        Resumo: resumo,
+
         Categoria: categoria.value
     }
 
@@ -41,7 +41,7 @@ function exibirFil() {
     document.getElementById("resultado").innerHTML = ''
 
     for (var i = 0; i < filme.length; i++) {
-        document.getElementById("resultado").innerHTML += `<img src="${filme[i].Links}" class = "fil"> <br> ${filme[i].Nomes} <br> <br> ${filme[i].Resumo}  `
+        document.getElementById("resultado").innerHTML += `<img src="${filme[i].Links}" class = "fil"> <br> ${filme[i].Nomes} <br> <br> `
     }
 
 }
